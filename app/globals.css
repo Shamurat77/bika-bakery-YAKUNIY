@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-fraunces: var(--font-display);
+  --font-jost: var(--font-body);
+}
+
+@theme {
+  --color-blush-50: #fef5f9;
+  --color-blush-100: #fde8f2;
+  --color-blush-200: #fbd1e6;
+  --color-blush-300: #f7aed2;
+  --color-blush-400: #f3a9c5;
+  --color-blush-500: #ec7fac;
+  --color-blush-600: #dd6d97;
+  --color-blush-700: #c84d7d;
+  --color-blush-800: #a63d65;
+  --color-blush-900: #8a3455;
+
+  --color-cream: #fff8f4;
+  --color-espresso: #2a2019;
+
+  --color-gold: #c89b5c;
+  --color-gold-light: #e0c08a;
+  --color-gold-dark: #a07a3e;
+
+  --color-rose: #dd6d97;
+  --color-rose-light: #f3a9c5;
+  --color-rose-dark: #c84d7d;
+
+  --radius-blob: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  --radius-blob2: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  --radius-blob3: 70% 30% 30% 70% / 70% 70% 30% 30%;
+
+  --animate-fade-in: fade-in 0.6s ease-out both;
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-espresso);
+}
