@@ -2,16 +2,41 @@ export const BRANCHES = [
   {
     id: "toshkent-city",
     name: "Toshkent City Mall",
-    address: "Toshkent City bog'i yonida",
+    address: "Toshkent City Mall, 3-qavat, NIKE do'koni yonida",
     phone: "+998 90 000 00 00",
   },
   {
     id: "uzbekistan-hotel",
-    name: "Uzbekistan Hotel",
+    name: "«Uzbechka» — Uzbekistan Hotel",
     address: "Uzbekistan mehmonxonasi yonida",
     phone: "+998 90 000 00 01",
   },
+  {
+    id: "kofeynya",
+    name: "Bika Kofeynya",
+    address: "Asosiy kofexona",
+    phone: "+998 90 000 00 02",
+  },
+  {
+    id: "foodmall",
+    name: "FOODMALL korner",
+    address: "FOODMALL savdo markazi",
+    phone: "+998 90 000 00 03",
+  },
+  {
+    id: "doyoga",
+    name: "DOYOGA Coworking",
+    address: "DOYOGA kovorking markazi",
+    phone: "+998 90 000 00 04",
+  },
+  {
+    id: "pickup",
+    name: "PICK-UP korner",
+    address: "Olib ketish nuqtasi",
+    phone: "+998 90 000 00 05",
+  },
 ] as const;
+
 
 export type BranchId = (typeof BRANCHES)[number]["id"];
 
